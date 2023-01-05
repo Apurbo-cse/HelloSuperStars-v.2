@@ -7,4 +7,5 @@ export default {
   heart: require("../assets/images/heart.png"),
   post: require("../assets/images/post_1.jpg"),
   menu: require("../assets/images/menu.png"),
+  product: require("../assets/images/product.jpg"),
 };

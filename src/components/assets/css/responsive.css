@@ -82,7 +82,7 @@
           align-items: center;
           background-color: antiquewhite;
 
-          border-radius: 20px;
+
      }
 
      .footer .menu-icon img {
@@ -90,9 +90,31 @@
      }
 
 
+     .product-tab{
+          justify-content: space-around;
+     }
+     .product .description .title {
+          margin-top: 5px !important;
+     }
 
+     .product .description h5 {
+          margin: 0px !important;
+          padding: 0px;
+     }
 
+     .product .price {
+          margin-top: 0px !important;
+          padding-top: 0px !important;
+     }
 
+     .product img {
+          /* padding-left: px; */
 
+     }
+
+     .product-star {
+
+          margin: 0px !important;
+     }
 
 }
