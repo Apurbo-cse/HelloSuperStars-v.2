@@ -1,0 +1,98 @@
+@media only screen and (max-width: 600px) {
+     .post-main {
+          margin: 0px !important;
+          padding: 0px !important;
+          margin-bottom: 60px !important;
+
+     }
+
+     .post {
+          margin: 0px;
+          width: 100%;
+
+     }
+
+     .post .description {
+          font-size: 90% !important;
+     }
+
+     .desktop {
+          display: none;
+     }
+
+     .mobile {
+          display: block;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 50px;
+     }
+
+     .mobile .logo img {
+          width: 40px;
+     }
+
+
+     .footer {
+          display: flex;
+          justify-content: space-evenly;
+     }
+
+     .message .icon {
+          font-size: 18px;
+          text-decoration: none !important;
+          color: rgb(253, 145, 22);
+          text-align: center;
+          align-items: center;
+          background-color: antiquewhite;
+          padding: 10px;
+          border-radius: 30px;
+
+     }
+
+     .footer .icon {
+          text-decoration: none !important;
+          color: rgb(253, 145, 22);
+          text-align: center;
+          display: flex;
+          align-items: center;
+          background-color: antiquewhite;
+          padding: 10px;
+          border-radius: 20px;
+     }
+
+     .footer .icon i {
+          font-size: 22px;
+          text-decoration: none !important;
+          color: rgb(253, 145, 22);
+          text-align: center;
+          display: flex;
+          align-items: center;
+          background-color: antiquewhite;
+          padding: 1px;
+          border-radius: 20px;
+     }
+
+     .footer .menu-icon {
+          font-size: 22px;
+          text-decoration: none !important;
+          color: rgb(253, 145, 22);
+          text-align: center;
+          display: flex;
+          align-items: center;
+          background-color: antiquewhite;
+
+          border-radius: 20px;
+     }
+
+     .footer .menu-icon img {
+          width: 27px !important;
+     }
+
+
+
+
+
+
+
+}

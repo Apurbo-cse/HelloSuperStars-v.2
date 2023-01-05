@@ -1,0 +1,240 @@
+:root {
+     --body-bg: #fff;
+     --white: #ffffff;
+     --darkWhite: #efefef;
+     --black: #000000;
+     --dark: #919191;
+     --themeColor: #fff;
+     --hover-bg: #efefef;
+     --pageShadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+
+
+}
+
+body {
+     background-color: var(--body-bg) !important;
+}
+
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: sans-serif;
+}
+
+.mobile {
+     display: none;
+}
+
+nav {
+     width: 100%;
+     height: 60px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background: var(--themeColor);
+}
+
+nav .left .logo img {
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     margin: 5px 0;
+     cursor: pointer;
+}
+
+nav .left {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-left: 10px;
+}
+
+nav .left .search_bar {
+     width: 250px;
+     height: 40px;
+     background: #efefef;
+     border-radius: 30px;
+     padding: 0 10px;
+     margin-left: 10px;
+     position: relative;
+     left: 15px;
+}
+
+nav .left .search_bar i {
+     line-height: 40px;
+     font-size: 19px;
+     color: #919191;
+     margin-right: 5px;
+}
+
+nav .left .search_bar input {
+     background: transparent;
+     outline: none;
+     border: 0;
+     font-size: 16px;
+     width: 200px;
+}
+
+nav .center {
+     position: relative;
+     right: 45px;
+}
+
+nav .center .icon {
+     margin: 0 45px 0 45px;
+     font-size: 22px;
+     text-decoration: none !important;
+}
+
+nav .center .icon:hover {
+     color: #45abff;
+     cursor: pointer;
+}
+
+nav .right {
+     display: flex;
+     align-items: center;
+     margin-right: 10px;
+}
+
+nav .right .icon {
+     width: 35px;
+     height: 35px;
+     border-radius: 50%;
+     color: rgb(243, 179, 4);
+     background: #000000;
+     line-height: 35px;
+     padding-left: 8px;
+     font-size: 18px;
+     margin-left: 8px;
+     cursor: pointer;
+}
+
+nav .right img {
+     width: 35px;
+     height: 35px;
+     object-fit: cover;
+     object-position: center;
+     border-radius: 50%;
+     margin-left: 8px;
+     line-height: 45px;
+     cursor: pointer;
+}
+
+
+/* ===============  Post =============== */
+
+
+.post {
+
+     width: 100%;
+     height: auto;
+     background: var(--themeColor);
+     border-radius: 7px;
+     box-shadow: var(--pageShadow);
+
+}
+
+
+.post .post_top {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 10px 15px;
+}
+
+.post .post_top .img-name {
+     display: flex;
+     align-items: center;
+}
+
+.post .post_top .img-name img {
+     width: 45px;
+     height: 45px;
+     border-radius: 50%;
+     object-fit: cover;
+     object-position: center;
+     margin-right: 8px;
+     cursor: pointer;
+}
+
+.post .post_top .img-name .user-name {
+     font-weight: bold;
+     cursor: pointer;
+     margin: 0px !important;
+     padding-top: 0px !important;
+}
+
+.post .post_top .img-name .user-name:hover {
+     text-decoration: underline;
+}
+
+.post .post_top .img-name .time {
+     font-size: 12px;
+     color: var(--dark);
+     margin: 0px !important;
+     padding-top: 0px !important;
+}
+
+.post .post_top .menu {
+     width: 35px;
+     height: 35px;
+     border-radius: 50%;
+}
+
+.post .post_top .menu:hover {
+     background: var(--hover-bg);
+     cursor: pointer;
+}
+
+.post img {
+     width: 100%;
+     object-fit: cover;
+     object-position: center;
+
+}
+
+.post .description {
+     font-size: 100%;
+}
+
+.post .love-share {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.post .love img {
+     width: 20px;
+     height: 20px;
+}
+
+.post .love span {
+     color: var(--dark);
+     font-size: 95%;
+}
+
+.post .share span {
+     font-size: 95%;
+     color: var(--dark);
+}
+
+.sub-love-share {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: var(--darkWhite);
+     border-radius: 20px;
+}
+
+.love-react {
+     cursor: pointer;
+}
+
+
+/* Footer */
+.footer {
+     display: none;
+}
