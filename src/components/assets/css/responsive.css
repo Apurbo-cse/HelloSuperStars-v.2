@@ -13,7 +13,7 @@
      }
 
      .post .description {
-          font-size: 90% !important;
+          font-size: 80% !important;
      }
 
      .desktop {
@@ -30,6 +30,10 @@
 
      .mobile .logo img {
           width: 40px;
+     }
+
+     .sub-love-share {
+          font-size: 90%;
      }
 
 
@@ -90,9 +94,10 @@
      }
 
 
-     .product-tab{
+     .product-tab {
           justify-content: space-around;
      }
+
      .product .description .title {
           margin-top: 5px !important;
      }

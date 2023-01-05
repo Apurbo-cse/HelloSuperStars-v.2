@@ -197,7 +197,7 @@ nav .right img {
 }
 
 .post .description {
-     font-size: 100%;
+     font-size: 85%;
 }
 
 .post .love-share {
@@ -213,16 +213,17 @@ nav .right img {
 
 .post .love span {
      color: var(--dark);
-     font-size: 95%;
+     font-size: 80%;
 }
 
 .post .share span {
-     font-size: 95%;
+     font-size: 80%;
      color: var(--dark);
 }
 
 .sub-love-share {
      display: flex;
+     font-size: 80%;
      justify-content: space-between;
      align-items: center;
      background-color: var(--darkWhite);
