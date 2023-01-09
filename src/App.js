@@ -2,15 +2,18 @@ import { Routes, Route } from "react-router-dom";
 
 import "./components/assets/css/style.css";
 import "./components/assets/css/responsive.css";
+import "./components/assets/css/dark.css";
 
 import Navigation from "./components/layout/include/Navigation";
 import Footer from "./components/layout/include/Footer";
 import Home from "./components/pages/Home";
 import Eshowcase from "./components/pages/e-showcase/Eshowcase";
+import { useTheme } from "./components/context.js/ThemeContext";
 
 function App() {
+  const { isDarkMode } = useTheme();
   return (
-    <>
+    <div className={isDarkMode ? "lightMode" : "darkMode"}>
       <Navigation />
 
       <div className="container">
@@ -26,7 +29,7 @@ function App() {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

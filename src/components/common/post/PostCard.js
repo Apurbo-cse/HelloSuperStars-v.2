@@ -1,10 +1,14 @@
 import React from "react";
-import imagePath from "../../constants/imagePath";
 
-const PostCard = () => {
+import imagePath from "../../constants/imagePath";
+import { useTheme } from "../../context.js/ThemeContext";
+
+const PostCard = (props) => {
+  const { data } = props;
+  const { isDarkMode, toggleDarkMode } = useTheme();
   return (
     <>
-      <div className="post pb-3 mb-3">
+      {/* <div className="post pb-3 mb-3">
         <div className="post_top">
           <div className="img-name">
             <div>
@@ -19,15 +23,9 @@ const PostCard = () => {
             <i className="fa-solid fa-ellipsis"></i>
           </div>
         </div>
-        <p className="description px-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-          adipisci, ipsum, sed consequatur voluptatum et quam non aut suscipit
-          optio voluptate provident blanditiis doloribus eveniet? Similique,
-          aperiam labore veritatis debitis asperiores commodi exercitationem
-          natus, atque sapiente sint placeat dicta deserunt.
-        </p>
+        <p className="description px-3">{data.title}</p>
 
-        <img src={imagePath.post} />
+        <img src={data.thumbnailUrl} className="img-fluid" />
 
         <div className="love-share px-3 pb-1 pt-2">
           <div className="love">
@@ -53,8 +51,9 @@ const PostCard = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="post pb-3 mb-3">
+      </div> */}
+
+      <div className={`post pb-3 mb-3 ${isDarkMode ? null : "dark-post"} `}>
         <div className="post_top">
           <div className="img-name">
             <div>
@@ -62,14 +61,18 @@ const PostCard = () => {
             </div>
             <div>
               <p className="user-name">Apurbo Roy</p>
-              <small className="time">1st January 2023.</small>
+              <small className={`time ${isDarkMode ? "timeX" : "gold-color"} `}>
+                1st January 2023.
+              </small>
             </div>
+            {/* time */}
           </div>
           <div className="menu">
             <i className="fa-solid fa-ellipsis"></i>
           </div>
         </div>
-        <p className="description px-3">
+
+        <p className={`description px-3 ${isDarkMode ? null : "dark-color"} `}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
           adipisci, ipsum, sed consequatur voluptatum et quam non aut suscipit
           optio voluptate provident blanditiis doloribus eveniet? Similique,
@@ -79,6 +82,7 @@ const PostCard = () => {
 
         <img src={imagePath.post} />
 
+        {/* View React */}
         <div className="love-share px-3 pb-1 pt-2">
           <div className="love">
             <img src={imagePath.heart} />
@@ -88,8 +92,14 @@ const PostCard = () => {
             <span>500 Shares</span>
           </div>
         </div>
+        {/* View React */}
+
         <div className="d-flex justify-content-center">
-          <div className="col-10 sub-love-share px-3 py-1 mt-1">
+          <div
+            className={`col-10 sub-love-share px-3 py-1 mt-1 ${
+              isDarkMode ? "shareX" : "bg-react dark-color"
+            }`}
+          >
             <div className="love-sub">
               <span className="love-react p-0 m-0">
                 {" "}
@@ -104,7 +114,7 @@ const PostCard = () => {
           </div>
         </div>
       </div>
-      <div className="post pb-3 mb-3">
+      <div className={`post pb-3 mb-3 ${isDarkMode ? null : "dark-post"} `}>
         <div className="post_top">
           <div className="img-name">
             <div>
@@ -112,14 +122,18 @@ const PostCard = () => {
             </div>
             <div>
               <p className="user-name">Apurbo Roy</p>
-              <small className="time">1st January 2023.</small>
+              <small className={`time ${isDarkMode ? "timeX" : "gold-color"} `}>
+                1st January 2023.
+              </small>
             </div>
+            {/* time */}
           </div>
           <div className="menu">
             <i className="fa-solid fa-ellipsis"></i>
           </div>
         </div>
-        <p className="description px-3">
+
+        <p className={`description px-3 ${isDarkMode ? null : "dark-color"} `}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
           adipisci, ipsum, sed consequatur voluptatum et quam non aut suscipit
           optio voluptate provident blanditiis doloribus eveniet? Similique,
@@ -129,6 +143,7 @@ const PostCard = () => {
 
         <img src={imagePath.post} />
 
+        {/* View React */}
         <div className="love-share px-3 pb-1 pt-2">
           <div className="love">
             <img src={imagePath.heart} />
@@ -138,8 +153,14 @@ const PostCard = () => {
             <span>500 Shares</span>
           </div>
         </div>
+        {/* View React */}
+
         <div className="d-flex justify-content-center">
-          <div className="col-10 sub-love-share px-3 py-1 mt-1">
+          <div
+            className={`col-10 sub-love-share px-3 py-1 mt-1 ${
+              isDarkMode ? "shareX" : "bg-react dark-color"
+            }`}
+          >
             <div className="love-sub">
               <span className="love-react p-0 m-0">
                 {" "}
