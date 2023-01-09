@@ -11,11 +11,6 @@
 
 }
 
-body {
-     background-color: var(--body-bg) !important;
-}
-
-
 * {
      margin: 0;
      padding: 0;
@@ -34,6 +29,10 @@ nav {
      align-items: center;
      justify-content: space-between;
      background: var(--themeColor);
+}
+
+.light-nav {
+     background-color: var(--nav-bg-dark);
 }
 
 nav .left .logo img {
@@ -85,6 +84,7 @@ nav .center {
 nav .center .icon {
      margin: 0 45px 0 45px;
      font-size: 22px;
+     color: var(--dark) !important;
      text-decoration: none !important;
 }
 
@@ -103,13 +103,13 @@ nav .right .icon {
      width: 35px;
      height: 35px;
      border-radius: 50%;
-     color: rgb(243, 179, 4);
-     background: #000000;
      line-height: 35px;
      padding-left: 8px;
      font-size: 18px;
      margin-left: 8px;
+     color: #919191 !important;
      cursor: pointer;
+     text-decoration: none;
 }
 
 nav .right img {
@@ -173,10 +173,14 @@ nav .right img {
 
 .post .post_top .img-name .time {
      font-size: 12px;
-     color: var(--dark);
      margin: 0px !important;
      padding-top: 0px !important;
 }
+
+.post .post_top .img-name .timeX {
+     color: var(--dark);
+}
+
 
 .post .post_top .menu {
      width: 35px;
@@ -187,6 +191,11 @@ nav .right img {
 .post .post_top .menu:hover {
      background: var(--hover-bg);
      cursor: pointer;
+}
+
+.post video {
+     width: 100%;
+     max-height: 380px;
 }
 
 .post img {
@@ -226,8 +235,12 @@ nav .right img {
      font-size: 80%;
      justify-content: space-between;
      align-items: center;
-     background-color: var(--darkWhite);
+
      border-radius: 20px;
+}
+
+.shareX {
+     background-color: var(--darkWhite);
 }
 
 .love-react {
