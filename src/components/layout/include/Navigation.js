@@ -57,13 +57,24 @@ const Navigation = () => {
         <Link to="/" className="logo">
           <img src={imagePath.logo} />
         </Link>
+
         <div className="message">
-          <Link to="/" className="icon fa-solid fa-magnifying-glass"></Link>
           <Link
             to="/"
-            className="icon mx-2 fa-brands fa-facebook-messenger"
+            className={`fa-solid fa-magnifying-glass  ${
+              isDarkMode ? "mobile-nav" : "mobile-nav-dark"
+            } `}
           ></Link>
-          <Link className="icon ">
+          <Link
+            to="/"
+            className={`mx-2 fa-brands fa-facebook-messenger  ${
+              isDarkMode ? "mobile-nav" : "mobile-nav-dark"
+            } `}
+          ></Link>
+
+          <Link
+            className={` ${isDarkMode ? "mobile-nav" : "mobile-nav-dark"} `}
+          >
             <DarkModeSwitch
               sunColor="gold"
               moonColor="gray"
@@ -74,7 +85,6 @@ const Navigation = () => {
           </Link>
         </div>
       </nav>
-
       {/* Momible View End*/}
     </>
   );

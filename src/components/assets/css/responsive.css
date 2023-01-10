@@ -1,20 +1,22 @@
 :root {
      --icon-color: rgb(58, 58, 58);
+     --footer-bg: rgb(97, 93, 93);
+     --icon-dark: rgba(253, 233, 204, 0.836);
+     --footer-light: rgba(65, 63, 61, 0.836);
 
 }
 
 @media only screen and (max-width: 600px) {
+
      .post-main {
           margin: 0px !important;
           padding: 0px !important;
-          margin-bottom: 80px !important;
-
+          margin-bottom: 60px !important;
      }
 
      .post {
           margin: 0px;
           width: 100%;
-
      }
 
      .post .description {
@@ -31,6 +33,7 @@
           justify-content: space-between;
           align-items: center;
           height: 50px;
+          border-bottom: .1px solid rgb(63, 61, 65);
      }
 
      .mobile .logo img {
@@ -43,59 +46,66 @@
 
 
      .footer {
-          display: flex;
-          justify-content: space-evenly;
+          display: flex !important;
+          justify-content: space-around;
+          border-top: .1px solid rgb(63, 61, 65);
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
      }
 
-     .message .icon {
+     .footer-link {
+          background-color: var(--footer-bg);
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          font-size: 1.1em;
+          display: flex;
+          color: var(--icon-dark);
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+
+     }
+
+     .footer-dark-link {
+
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          font-size: 1.1em;
+          display: flex;
+          color: rgb(58, 58, 58);
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+
+     }
+
+     .bd-shadow {
+          background-color: rgb(255, 255, 255);
+          -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+          -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+          box-shadow: 5px 5px 15px rgba(68, 68, 68, 0.6);
+     }
+
+     .mobile-nav {
           font-size: 18px;
           text-decoration: none !important;
-          color: var(--icon-color);
           text-align: center;
           align-items: center;
-          background-color: antiquewhite;
+          padding: 10px;
+          color: rgb(112, 109, 109);
+          border-radius: 30px;
+     }
+
+
+     .mobile-nav-dark {
+          font-size: 18px;
+          text-decoration: none !important;
+          color: var(--icon-dark);
+          text-align: center;
+          align-items: center;
           padding: 10px;
           border-radius: 30px;
-
-     }
-
-     .footer .icon {
-          text-decoration: none !important;
-          color: var(--icon-color);
-          text-align: center;
-          display: flex;
-          align-items: center;
-          background-color: antiquewhite;
-          padding: 10px;
-          border-radius: 20px;
-     }
-
-     .footer .icon i {
-          font-size: 22px;
-          text-decoration: none !important;
-          color: var(--icon-color);
-          text-align: center;
-          display: flex;
-          align-items: center;
-          background-color: antiquewhite;
-          padding: 1px;
-          border-radius: 20px;
-     }
-
-     .footer .menu-icon {
-          font-size: 22px;
-          text-decoration: none !important;
-          color: rgb(253, 145, 22);
-          text-align: center;
-          display: flex;
-          align-items: center;
-          background-color: antiquewhite;
-
-
-     }
-
-     .footer .menu-icon img {
-          width: 27px !important;
      }
 
 
@@ -117,10 +127,6 @@
           padding-top: 0px !important;
      }
 
-     .product img {
-          /* padding-left: px; */
-
-     }
 
      .product-star {
 
