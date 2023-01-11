@@ -314,3 +314,30 @@ nav .right img {
      font-size: 100%;
      font-weight: bold;
 }
+
+
+
+/* ++++++++++++++++ Left Side ++++++++++++++++ */
+.left-side {
+     background-color: hsl(0, 0%, 100%);
+     color: #2b2626;
+     cursor: pointer;
+}
+
+.left-side-dark {
+     background-color: hsl(0, 0%, 0%);
+     color: #d1cdcd;
+     cursor: pointer;
+}
+
+.left-icon {
+     width: 55px !important;
+}
+
+.left-sub-text {
+     color: rgba(0, 0, 0, .5);
+}
+
+.left-font-sub {
+     font-size: 11px;
+}

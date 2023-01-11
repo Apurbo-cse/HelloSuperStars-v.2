@@ -6,6 +6,13 @@
 
 }
 
+.bd-shadow {
+     background-color: rgb(255, 255, 255);
+     -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+     -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+     box-shadow: 5px 5px 15px rgba(68, 68, 68, 0.6);
+}
+
 @media only screen and (max-width: 600px) {
 
      .post-main {
@@ -80,12 +87,7 @@
 
      }
 
-     .bd-shadow {
-          background-color: rgb(255, 255, 255);
-          -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
-          -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
-          box-shadow: 5px 5px 15px rgba(68, 68, 68, 0.6);
-     }
+
 
      .mobile-nav {
           font-size: 18px;
@@ -133,4 +135,49 @@
           margin: 0px !important;
      }
 
+}
+
+.main-position {
+     position: relative;
+}
+
+.left-position {
+     position: absolute;
+     top: 75px;
+     left: 16px;
+     height: 100vh;
+     min-width: 300px;
+     display: block !important;
+}
+
+.right-position {
+     position: absolute;
+     top: 75px;
+     right: 16px;
+     height: 100vh;
+     min-width: 300px;
+     display: block !important;
+}
+
+@media only screen and (max-width: 1024px) {
+
+     .left-position {
+          display: none !important;
+     }
+
+     .right-position {
+          display: none !important;
+     }
+}
+
+
+@media only screen and (max-width: 1399px) {
+
+     .left-position {
+          width: 10px !important;
+     }
+
+     .right-position {
+          width: 10px !important;
+     }
 }

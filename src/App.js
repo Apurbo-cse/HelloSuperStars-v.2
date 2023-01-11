@@ -9,13 +9,17 @@ import Footer from "./components/layout/include/Footer";
 import Home from "./components/pages/Home";
 import Eshowcase from "./components/pages/e-showcase/Eshowcase";
 import { useTheme } from "./components/context.js/ThemeContext";
+import LeftSidebar from "./components/layout/include/LeftSidebar";
 
 function App() {
   const { isDarkMode } = useTheme();
   return (
-    <div className={isDarkMode ? "lightMode" : "darkMode"}>
+    <div className={`main-position ${isDarkMode ? "lightMode" : "darkMode"}`}>
       <Navigation />
 
+      <div className="left-position ">
+        <LeftSidebar />
+      </div>
       <div className="container">
         <div className="row pt-3">
           <div className="col-lg-3"></div>
@@ -28,6 +32,7 @@ function App() {
           <div className="col-lg-3"></div>
         </div>
       </div>
+      <div className="right-position bg-dark">dsfdsfsdf</div>
       <Footer />
     </div>
   );
