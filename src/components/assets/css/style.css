@@ -7,6 +7,7 @@
      --themeColor: #fff;
      --hover-bg: #efefef;
      --pageShadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+     --icon: #919191;
 
 
 }
@@ -64,7 +65,7 @@ nav .left .search_bar {
 nav .left .search_bar i {
      line-height: 40px;
      font-size: 19px;
-     color: #919191;
+     color: var(--icon);
      margin-right: 5px;
 }
 
@@ -107,7 +108,7 @@ nav .right .icon {
      padding-left: 8px;
      font-size: 18px;
      margin-left: 8px;
-     color: #919191 !important;
+     color: var(--icon) !important;
      cursor: pointer;
      text-decoration: none;
 }
@@ -313,4 +314,61 @@ nav .right img {
      margin-top: 10px;
      font-size: 100%;
      font-weight: bold;
+}
+
+
+
+/* ++++++++++++++++ Left Side ++++++++++++++++ */
+
+.Link {
+     text-decoration: none !important;
+}
+
+.left-side {
+     background-color: hsl(0, 0%, 100%);
+     color: #2b2626;
+     cursor: pointer;
+}
+
+.left-side-dark {
+     background-color: hsl(0, 0%, 0%);
+     color: #d1cdcd;
+     cursor: pointer;
+}
+
+.left-icon {
+     width: 55px !important;
+}
+
+.left-sub-text {
+     color: rgba(0, 0, 0, .5);
+}
+
+.left-font-sub {
+     font-size: 11px;
+}
+
+
+/* ++++++++++++++++ Right Side ++++++++++++++++ */
+
+.right-tag-scroll {
+     display: flex;
+     flex-wrap: nowrap;
+     /* overflow-x: auto; */
+}
+
+.btn-h {
+     min-height: 60px;
+     border-radius: 5px;
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: var(--icon) !important;
+     text-decoration: none;
+
+}
+
+.btn-h-dark {
+     background-color: #000000 !important;
 }
