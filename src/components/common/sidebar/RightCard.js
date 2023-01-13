@@ -7,7 +7,9 @@ const RightCard = (props) => {
   return (
     <>
       <div className={`post mb-3 p-1 ${isDarkMode ? null : "dark-post"} `}>
-        <span className="px-2">{props.header}</span>
+        <span className={`px-2 ${isDarkMode ? null : "post-info"}`}>
+          {props.header}
+        </span>
         <div className="d-flex align-items-center justify-content-between m-2 right-tag-scroll">
           <div className="col-5 right-tag">
             <img src={props.img} alt="" />

@@ -9,8 +9,7 @@ import Footer from "./components/layout/include/Footer";
 import { useTheme } from "./components/context.js/ThemeContext";
 
 import RootRoute from "./components/routes/RootRoute";
-
-import DetailsCard from "./components/common/details/DetailsCard";
+import LiveChatDetails from "./components/pages/post/LiveChatDetails";
 
 function App() {
   const { isDarkMode } = useTheme();
@@ -20,7 +19,7 @@ function App() {
 
       <Routes>
         <Route index path="/*" element={<RootRoute />} />
-        <Route path="/live-chat/slug" element={<DetailsCard />} />
+        <Route path="/live-chat/slug" element={<LiveChatDetails />} />
       </Routes>
 
       <Footer />

@@ -1,8 +1,9 @@
 import React from "react";
-import imagePath from "../../constants/imagePath";
+
 import { useTheme } from "../../context.js/ThemeContext";
 
-const DetailsCard = () => {
+const DetailsCard = (props) => {
+  // const {data} =props;
   const { isDarkMode, toggleDarkMode } = useTheme();
   return (
     <>
@@ -14,34 +15,30 @@ const DetailsCard = () => {
             
             `}
           >
-            <img src={imagePath.post} alt="" className="img-fluid" />
+            <img src={props.banner} alt="" className="img-fluid" />
             <div className="my-3 mx-3">
-              <h4 className="fw-bold">Live Chat with Shakib Al Hasan</h4>
+              <h4 className={`fw-bold ${isDarkMode ? null : "post-info"}`}>
+                {props.title}
+              </h4>
 
               <p
                 className={`description  ${isDarkMode ? null : "dark-color"} `}
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-                adipisci, ipsum, sed consequatur voluptatum et quam non aut
-                suscipit optio voluptate provident blanditiis doloribus eveniet?
-                Similique, aperiam labore veritatis debitis asperiores commodi
-                exercitationem natus, atque sapiente sint placeat dicta
-                deserunt.
+                {props.description}
               </p>
 
-              <h6 className={` fs-5  ${isDarkMode ? "unl" : "unld"}`}>
-                Instruction
-              </h6>
+              {props.instruction === null ? null : (
+                <h6
+                  className={` fs-5   ${isDarkMode ? "unl" : "unld post-info"}`}
+                >
+                  Instruction
+                </h6>
+              )}
 
               <p
                 className={`description  ${isDarkMode ? null : "dark-color"} `}
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-                adipisci, ipsum, sed consequatur voluptatum et quam non aut
-                suscipit optio voluptate provident blanditiis doloribus eveniet?
-                Similique, aperiam labore veritatis debitis asperiores commodi
-                exercitationem natus, atque sapiente sint placeat dicta
-                deserunt.
+                {props.instruction}
               </p>
             </div>
           </div>
