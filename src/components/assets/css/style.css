@@ -248,6 +248,17 @@ nav .right img {
      cursor: pointer;
 }
 
+/* Post details */
+.details img {
+     width: 100% !important;
+}
+
+.dark-shadow {
+     background-color: var(--nav-dark);
+     -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+     -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+     box-shadow: 5px 5px 15px rgba(68, 68, 68, 0.6);
+}
 
 /* Footer */
 .footer {
