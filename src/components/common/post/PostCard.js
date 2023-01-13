@@ -27,6 +27,10 @@ const PostCard = (props) => {
           </div>
         </div>
 
+        <h6 className="fw-bold px-3 " style={{ fontSize: "13px" }}>
+          Live Chat with Shakib Al Hasan
+        </h6>
+
         <p className={`description px-3 ${isDarkMode ? null : "dark-color"} `}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
           adipisci, ipsum, sed consequatur voluptatum et quam non aut suscipit
@@ -87,6 +91,10 @@ const PostCard = (props) => {
             <i className="fa-solid fa-ellipsis"></i>
           </div>
         </div>
+
+        <h6 className="fw-bold px-3 " style={{ fontSize: "13px" }}>
+          Live Chat with Shakib Al Hasan
+        </h6>
 
         <p className={`description px-3 ${isDarkMode ? null : "dark-color"} `}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
