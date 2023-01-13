@@ -17,6 +17,7 @@ const DetailsCard = () => {
             <img src={imagePath.post} alt="" className="img-fluid" />
             <div className="my-3 mx-3">
               <h4 className="fw-bold">Live Chat with Shakib Al Hasan</h4>
+
               <p
                 className={`description  ${isDarkMode ? null : "dark-color"} `}
               >
@@ -27,7 +28,11 @@ const DetailsCard = () => {
                 exercitationem natus, atque sapiente sint placeat dicta
                 deserunt.
               </p>
-              <h5 className="fw-bold">Instruction</h5>
+
+              <h6 className={` fs-5  ${isDarkMode ? "unl" : "unld"}`}>
+                Instruction
+              </h6>
+
               <p
                 className={`description  ${isDarkMode ? null : "dark-color"} `}
               >

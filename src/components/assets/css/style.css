@@ -8,6 +8,25 @@
      --hover-bg: #efefef;
      --pageShadow: 0 1px 8px rgba(0, 0, 0, 0.2);
      --icon: #919191;
+     --underLine: rgb(184, 182, 182);
+
+
+
+     /* Dark */
+     --bg-dark: rgb(0, 0, 0);
+     --nav-dark: rgb(29, 33, 37);
+     --bg-card: rgb(7, 22, 36);
+     --bg-react: rgb(7, 22, 36);
+     --color-dark: rgb(211, 211, 211);
+     --color-gold: rgba(255, 187, 0, 0.733);
+
+
+     /* Icon  */
+     --icon-color: rgb(58, 58, 58);
+     --footer-bg: rgb(97, 93, 93);
+     --icon-dark: rgba(253, 233, 204, 0.836);
+     --footer-light: rgba(65, 63, 61, 0.836);
+
 
 
 }
@@ -258,6 +277,16 @@ nav .right img {
      -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
      -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
      box-shadow: 5px 5px 15px rgba(68, 68, 68, 0.6);
+}
+
+.unl {
+     border-bottom: 1px solid var(--underLine);
+     padding-bottom: 5px;
+}
+
+.unld {
+     border-bottom: 1px solid var(--color-gold);
+     padding-bottom: 5px;
 }
 
 /* Footer */
