@@ -9,9 +9,13 @@ import Navigation from "./components/layout/include/Navigation";
 import Footer from "./components/layout/include/Footer";
 import { useTheme } from "./components/context.js/ThemeContext";
 
-import RootRoute from "./components/routes/RootRoute";
-import LiveChatDetails from "./components/pages/post/LiveChatDetails";
-import Profile from "./components/pages/star/Profile";
+import Master from "./components/layout/Master";
+import Home from "./components/pages/Home";
+import LiveChat from "./components/pages/post/LiveChat";
+import Eshowcase from "./components/pages/e-showcase/Eshowcase";
+import StarLayout from "./components/layout/StarLayout";
+import PhotosCard from "./components/common/PhotosCard";
+import StarProfile from "./components/pages/star/StarProfile";
 
 function App() {
   const { isDarkMode } = useTheme();
@@ -20,9 +24,21 @@ function App() {
       <Navigation />
 
       <Routes>
-        <Route index path="/*" element={<RootRoute />} />
-        <Route index path="/star-profile/:id" element={<Profile />} />
-        <Route path="/live-chat/slug" element={<LiveChatDetails />} />
+        {/* Master Layout  */}
+        <Route path="/" element={<Master />}>
+          <Route index element={<Home />} />
+          <Route path="e-showcase" element={<Eshowcase />} />
+          <Route path="live-chat" element={<LiveChat />} />
+        </Route>
+
+        {/* Star Layout  */}
+        <Route path="/star/:id" element={<StarLayout />}>
+          <Route index element={<StarProfile />} />
+          <Route path="photos" element={<PhotosCard />} />
+          <Route path="videos" element={<PhotosCard />} />
+          <Route path="fan-group" element={<PhotosCard />} />
+          <Route path="photos" element={<PhotosCard />} />
+        </Route>
       </Routes>
 
       <Footer />
