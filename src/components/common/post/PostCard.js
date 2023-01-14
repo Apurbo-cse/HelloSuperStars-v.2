@@ -5,6 +5,7 @@ import { useTheme } from "../../context.js/ThemeContext";
 
 const PostCard = (props) => {
   const { data } = props;
+
   const { isDarkMode, toggleDarkMode } = useTheme();
   return (
     <>

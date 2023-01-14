@@ -15,7 +15,7 @@ const DetailsCard = (props) => {
             
             `}
           >
-            <img src={props.banner} alt="" className="img-fluid" />
+            <img src={props.banner} alt="" className="details-img img-fluid" />
             <div className="my-3 mx-3">
               <h4 className={`fw-bold ${isDarkMode ? null : "post-info"}`}>
                 {props.title}

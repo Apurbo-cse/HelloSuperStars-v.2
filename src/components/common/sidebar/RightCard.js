@@ -11,12 +11,12 @@ const RightCard = (props) => {
           {props.header}
         </span>
         <div className="d-flex align-items-center justify-content-between m-2 right-tag-scroll">
-          <div className="col-5 right-tag">
+          <Link to={props.urlSlug} className="col-5 right-tag">
             <img src={props.img} alt="" />
-          </div>
-          <div className="col-5 right-tag">
+          </Link>
+          <Link to={props.urlSlug} className="col-5 right-tag">
             <img src={props.img} alt="" />
-          </div>
+          </Link>
 
           <Link
             to={props.urlLink}
