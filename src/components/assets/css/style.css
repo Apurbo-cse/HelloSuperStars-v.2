@@ -198,9 +198,30 @@ nav .right img {
      cursor: pointer;
      margin: 0px !important;
      padding-top: 0px !important;
+     padding-bottom: 0px !important;
+     text-decoration: none;
+     color: #000000;
+     text-decoration: none;
 }
 
+
 .post .post_top .img-name .user-name:hover {
+     text-decoration: underline;
+}
+
+
+.post .post_top .img-name .user-name-dark {
+     font-weight: bold;
+     cursor: pointer;
+     margin: 0px !important;
+     padding-top: 0px !important;
+     text-decoration: none;
+     color: #ffffff;
+     text-decoration: none;
+}
+
+
+.post .post_top .img-name .user-name-dark:hover {
      text-decoration: underline;
 }
 

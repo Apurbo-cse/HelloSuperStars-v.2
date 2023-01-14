@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 import imagePath from "../../constants/imagePath";
 import { useTheme } from "../../context.js/ThemeContext";
@@ -16,7 +17,13 @@ const PostCard = (props) => {
               <img src={imagePath.post} alt="" />
             </div>
             <div>
-              <p className="user-name">Apurbo Roy</p>
+              <NavLink
+                to={`/star/1`}
+                className={` ${isDarkMode ? "user-name" : "user-name-dark"} `}
+              >
+                Apurbo Roy
+              </NavLink>{" "}
+              <br />
               <small className={`time ${isDarkMode ? "timeX" : "gold-color"} `}>
                 1st January 2023.
               </small>
