@@ -1,18 +1,9 @@
-:root {
-     --icon-color: rgb(58, 58, 58);
-     --footer-bg: rgb(97, 93, 93);
-     --icon-dark: rgba(253, 233, 204, 0.836);
-     --footer-light: rgba(65, 63, 61, 0.836);
-
-}
-
 .bd-shadow {
      background-color: rgb(255, 255, 255);
      -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
      -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
      box-shadow: 5px 5px 15px rgba(68, 68, 68, 0.6);
 }
-
 
 .post-main-body {
      position: relative;
@@ -145,7 +136,6 @@
           margin-top: 0px !important;
           padding-top: 0px !important;
      }
-
 
      .product-star {
 

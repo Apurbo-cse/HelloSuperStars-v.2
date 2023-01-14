@@ -5,6 +5,7 @@ import { useTheme } from "../../context.js/ThemeContext";
 
 const PostCard = (props) => {
   const { data } = props;
+
   const { isDarkMode, toggleDarkMode } = useTheme();
   return (
     <>
@@ -26,6 +27,10 @@ const PostCard = (props) => {
             <i className="fa-solid fa-ellipsis"></i>
           </div>
         </div>
+
+        <h6 className="fw-bold px-3 " style={{ fontSize: "13px" }}>
+          Live Chat with Shakib Al Hasan
+        </h6>
 
         <p className={`description px-3 ${isDarkMode ? null : "dark-color"} `}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
@@ -87,6 +92,10 @@ const PostCard = (props) => {
             <i className="fa-solid fa-ellipsis"></i>
           </div>
         </div>
+
+        <h6 className="fw-bold px-3 " style={{ fontSize: "13px" }}>
+          Live Chat with Shakib Al Hasan
+        </h6>
 
         <p className={`description px-3 ${isDarkMode ? null : "dark-color"} `}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa

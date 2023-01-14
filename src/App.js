@@ -3,14 +3,15 @@ import { Routes, Route } from "react-router-dom";
 import "./components/assets/css/style.css";
 import "./components/assets/css/responsive.css";
 import "./components/assets/css/dark.css";
+import "./components/assets/css/profile.css";
 
 import Navigation from "./components/layout/include/Navigation";
 import Footer from "./components/layout/include/Footer";
-import Home from "./components/pages/Home";
-import Eshowcase from "./components/pages/e-showcase/Eshowcase";
 import { useTheme } from "./components/context.js/ThemeContext";
-import LeftSidebar from "./components/layout/include/LeftSidebar";
-import RightSidebar from "./components/layout/include/RightSidebar";
+
+import RootRoute from "./components/routes/RootRoute";
+import LiveChatDetails from "./components/pages/post/LiveChatDetails";
+import Profile from "./components/pages/star/Profile";
 
 function App() {
   const { isDarkMode } = useTheme();
@@ -18,23 +19,12 @@ function App() {
     <div className={`post-main-body ${isDarkMode ? "lightMode" : "darkMode"}`}>
       <Navigation />
 
-      <div className="container-fluid">
-        <div className="row pt-3 d-flex justify-content-between">
-          <div className="col-lg-3 left-position">
-            {" "}
-            <LeftSidebar />
-          </div>
-          <div className="col-sm-12 col-md-12 col-lg-6 post-main">
-            <Routes>
-              <Route exact path="/" element={<Home />} />
-              <Route exact path="/e-showcase" element={<Eshowcase />} />
-            </Routes>
-          </div>
-          <div className="col-lg-3 right-position">
-            <RightSidebar />
-          </div>
-        </div>
-      </div>
+      <Routes>
+        <Route index path="/*" element={<RootRoute />} />
+        <Route index path="/star-profile/:id" element={<Profile />} />
+        <Route path="/live-chat/slug" element={<LiveChatDetails />} />
+      </Routes>
+
       <Footer />
     </div>
   );

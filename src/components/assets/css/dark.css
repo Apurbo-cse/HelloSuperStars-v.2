@@ -1,15 +1,3 @@
-:root {
-     --bg-dark: rgb(0, 0, 0);
-     --nav-dark: rgb(29, 33, 37);
-     --bg-card: rgb(7, 22, 36);
-     --bg-react: rgb(7, 22, 36);
-     --color-dark: rgb(211, 211, 211);
-     --color-gold: rgba(255, 187, 0, 0.733);
-
-}
-
-
-/* {`post pb-3 mb-3 ${isDarkMode ? null : "dark-post"} `} */
 
 
 .darkMode {
@@ -38,7 +26,4 @@
 
 .bg-react {
      background-color: var(--bg-react);
-}
-.footer-dark{
-     
 }

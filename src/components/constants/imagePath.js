@@ -2,6 +2,7 @@
 export default {
   logo: require("../assets/images/logo.png"),
   user: require("../assets/images/profile.png"),
+  cover: require("../assets/images/cover.png"),
   like: require("../assets/images/like.png"),
   haha: require("../assets/images/haha.png"),
   heart: require("../assets/images/heart.png"),

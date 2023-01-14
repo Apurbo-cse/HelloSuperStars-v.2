@@ -1,7 +1,7 @@
 import React from "react";
 import { Nav, Tab, Tabs } from "react-bootstrap";
 import MarketPlace from "./MarketPlace";
-const eShowcase = () => {
+const Eshowcase = () => {
   return (
     <>
       <Tab.Container id="left-tabs-example" defaultActiveKey="first">
@@ -37,4 +37,4 @@ const eShowcase = () => {
   );
 };
 
-export default eShowcase;
+export default Eshowcase;
