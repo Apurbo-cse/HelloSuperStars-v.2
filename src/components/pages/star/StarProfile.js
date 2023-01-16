@@ -21,7 +21,10 @@ const StarProfile = () => {
               <img src={imagePath.user} alt="" className="profile-img" />
             </div>
             <div className="my-3 mx-3  star-left">
-              <h4>Shakib Al Hasan</h4>
+              <h4 className="m-0 p-0">Shakib Al Hasan</h4>
+              <p className="m-0 p-0">
+                <small>@shakibalhasan75</small>
+              </p>
               <small>Star | Cricket</small>
             </div>
           </div>

@@ -16,23 +16,19 @@ const StarLayout = () => {
         }`}
       >
         {" "}
-        <div className="container">
+        <div className="container max-body-width">
           <div className="row">
             <StarProfile />
           </div>
         </div>
       </div>
-      <div className="container">
+      <div className="container max-body-width">
         <div className="row d-flex justify-content-between">
           <div className="col-lg-7 mb-2  m-0 p-0">
             <Outlet />
           </div>
           <div className="col-lg-4 mb-2 m-0 p-0">
-            <div
-              className={`post pb-3 mb-3 ${isDarkMode ? null : "dark-post"} `}
-            >
-              fdsfdsfds
-            </div>
+            <StarRight />
           </div>
         </div>
       </div>

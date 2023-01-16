@@ -11,12 +11,15 @@ export default {
   product: require("../assets/images/product.jpg"),
 
   // Left Icon
-  category: require("../assets/icon/category.png"),
-  following: require("../assets/icon/following.png"),
-  fangroup: require("../assets/icon/fangroup.png"),
-  package: require("../assets/icon/package.png"),
-  enroll: require("../assets/icon/enroll.png"),
-  activities: require("../assets/icon/activities.png"),
-  setting: require("../assets/icon/setting.png"),
-  term: require("../assets/icon/term.png"),
+  category: require("../assets/icon/left/category.png"),
+  following: require("../assets/icon/left/following.png"),
+  fangroup: require("../assets/icon/left/fangroup.png"),
+  package: require("../assets/icon/left/package.png"),
+  enroll: require("../assets/icon/left/enroll.png"),
+  activities: require("../assets/icon/left/activities.png"),
+  setting: require("../assets/icon/left/setting.png"),
+  term: require("../assets/icon/left/term.png"),
+
+  // Right Icon
+  liveChat: require("../assets/icon/right/LiveChat.png"),
 };

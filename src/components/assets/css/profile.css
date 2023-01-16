@@ -35,6 +35,15 @@
      left: 16px; */
 }
 
-.star-left {
-     margin-left: 1020px !important;
+/* .star-left {
+     margin-left: 100px !important;
+} */
+
+
+.right-icon {
+     position: relative;
+}
+
+.right-icon img {
+     /* position: absolute; */
 }
