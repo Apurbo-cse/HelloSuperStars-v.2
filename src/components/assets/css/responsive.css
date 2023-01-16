@@ -166,3 +166,14 @@
           display: none;
      }
 }
+
+@media only screen and (min-width: 1025px) {
+
+     .main-body-width {
+          max-width: 1700px;
+     }
+
+     .max-body-width {
+          max-width: 1290px !important;
+     }
+}

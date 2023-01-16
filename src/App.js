@@ -16,6 +16,7 @@ import Eshowcase from "./components/pages/e-showcase/Eshowcase";
 import StarLayout from "./components/layout/StarLayout";
 import PhotosCard from "./components/common/PhotosCard";
 import StarProfile from "./components/pages/star/StarProfile";
+import AllPost from "./components/pages/star/AllPost";
 
 function App() {
   const { isDarkMode } = useTheme();
@@ -33,7 +34,7 @@ function App() {
 
         {/* Star Layout  */}
         <Route path="/star/:id" element={<StarLayout />}>
-          <Route index element={<StarProfile />} />
+          <Route index element={<AllPost />} />
           <Route path="photos" element={<PhotosCard />} />
           <Route path="videos" element={<PhotosCard />} />
           <Route path="fan-group" element={<PhotosCard />} />

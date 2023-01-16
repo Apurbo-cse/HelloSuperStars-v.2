@@ -7,7 +7,7 @@ import RightSidebar from "./include/RightSidebar";
 const Master = () => {
   return (
     <>
-      <div className="container-fluid">
+      <div className="container-fluid main-body-width">
         <div className="row pt-3 d-flex justify-content-between">
           <div className="col-lg-3 left-position">
             {" "}
