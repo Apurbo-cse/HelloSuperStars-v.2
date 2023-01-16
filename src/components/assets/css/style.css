@@ -308,9 +308,10 @@ nav .right img {
 
 .dark-shadow {
      background-color: var(--nav-dark);
-     -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+     border-radius: 7px;
+     /* -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
      -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
-     box-shadow: 5px 5px 15px rgba(68, 68, 68, 0.6);
+     box-shadow: 5px 5px 15px rgba(68, 68, 68, 0.6); */
 }
 
 .unl {
@@ -428,6 +429,7 @@ nav .right img {
 
 
 /* ++++++++++++++++ Right Side ++++++++++++++++ */
+
 
 .right-tag-scroll {
      display: flex;

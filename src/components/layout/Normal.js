@@ -5,7 +5,7 @@ const Normal = () => {
   return (
     <>
       <div className="container">
-        <div className="row  d-flex justify-content-between">
+        <div className="row  d-flex justify-content-between ">
           <Outlet />
         </div>
       </div>
