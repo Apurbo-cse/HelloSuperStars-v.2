@@ -10,13 +10,12 @@ import Footer from "./components/layout/include/Footer";
 import { useTheme } from "./components/context.js/ThemeContext";
 
 import Master from "./components/layout/Master";
-import Home from "./components/pages/Home";
 import LiveChat from "./components/pages/post/LiveChat";
-import Eshowcase from "./components/pages/e-showcase/Eshowcase";
 import StarLayout from "./components/layout/StarLayout";
 import PhotosCard from "./components/common/PhotosCard";
-import StarProfile from "./components/pages/star/StarProfile";
 import AllPost from "./components/pages/star/AllPost";
+import E_ShowcasePage from "./views/E_ShowcasePage";
+import IndexPage from "./views/IndexPage";
 
 function App() {
   const { isDarkMode } = useTheme();
@@ -27,8 +26,8 @@ function App() {
       <Routes>
         {/* Master Layout  */}
         <Route path="/" element={<Master />}>
-          <Route index element={<Home />} />
-          <Route path="e-showcase" element={<Eshowcase />} />
+          <Route index element={<IndexPage />} />
+          <Route path="e-showcase" element={<E_ShowcasePage />} />
           <Route path="live-chat" element={<LiveChat />} />
         </Route>
 
