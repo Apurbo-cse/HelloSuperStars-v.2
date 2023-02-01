@@ -39,6 +39,8 @@ function App() {
           <Route path="fan-group" element={<PhotosCard />} />
           <Route path="photos" element={<PhotosCard />} />
         </Route>
+
+        
       </Routes>
 
       <Footer />
