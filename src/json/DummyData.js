@@ -77,8 +77,7 @@ export const Users = [
     username: "Srabanti Chatterjee ",
     video: "https://www.youtube.com/watch?v=k0w_Bapu8ac",
     date: "21th November",
-    postTitel:
-      "Had a fantastic shoot for the upcoming film! Stay tuned my fans something interesting is coming up fort all of you!",
+    postTitel:"Had a fantastic shoot for the upcoming film! Stay tuned my fans something interesting is coming up fort all of you!",
     time: "5:30 PM",
     date: "21th November",
     candidate: "360",

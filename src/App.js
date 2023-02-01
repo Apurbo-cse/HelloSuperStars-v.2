@@ -16,6 +16,7 @@ import PhotosCard from "./components/common/PhotosCard";
 import AllPost from "./components/pages/star/AllPost";
 import E_ShowcasePage from "./views/E_ShowcasePage";
 import IndexPage from "./views/IndexPage";
+import SettingsPage from "./views/SettingsPage";
 
 function App() {
   const { isDarkMode } = useTheme();
@@ -29,6 +30,7 @@ function App() {
           <Route index element={<IndexPage />} />
           <Route path="e-showcase" element={<E_ShowcasePage />} />
           <Route path="live-chat" element={<LiveChat />} />
+          <Route path="settings" element={<SettingsPage />} />
         </Route>
 
         {/* Star Layout  */}
